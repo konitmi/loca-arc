@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0c0e"><meta name="description" content="loca.arc — Find any line. Instantly. A private, browser-based code and text finder.">
+<title>loca.arc — Find any line. Instantly.</title><link rel="icon" href="icon-original.png" type="image/png"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="#" aria-label="loca.arc home"><img src="logo-original.png" alt="loca.arc" class="logo"></a>
+<div class="header-actions"><div class="top-meta"><i></i> LOCAL SEARCH <b>/</b> NO UPLOADS</div><button id="themeToggle" class="header-icon" type="button" aria-label="Switch light/dark mode" title="Switch light/dark mode">☼</button><div class="site-menu-wrap"><button id="siteMenuToggle" class="header-icon" type="button" aria-label="Open menu" aria-expanded="false" title="Menu">⋮</button><div id="siteMenu" class="site-menu" hidden><button type="button" data-site-panel="how">How to Use <span>↗</span></button><button type="button" data-site-panel="about">About loca.arc <span>↗</span></button></div></div></div>
+</header>
+<main>
+<section class="hero"><div class="eyebrow"><span></span>A TOOL FOR PEOPLE WHO BUILD</div><h1>Find any line.<br><em>Instantly.</em></h1><p>Drop in code or text. Find the exact line, move through matches, and get back to building.</p></section>
+<section class="workspace">
+<div class="panel-head"><div class="panel-label"><span class="mini-mark">⌘</span> LINE FINDER <b>/</b> <span class="muted">SESSION ONLY</span></div><button id="clearAll" class="quiet-button">CLEAR ALL ↗</button></div>
+<label for="query">SEARCH QUERY</label>
+<div class="search-row"><span class="search-symbol">⌕</span><input id="query" type="search" placeholder="Find a function, phrase, variable..." autocomplete="off" spellcheck="false"><button id="searchBtn">FIND <span>↵</span></button></div>
+<div class="editor-head"><label for="source">YOUR CODE OR TEXT</label><div class="editor-meta"><span id="lineCount">0 LINES</span><b>/</b><span>STAYS IN THIS BROWSER</span></div></div>
+<textarea id="source" spellcheck="false" placeholder="// Paste code or text here&#10;function findTheLine() {&#10;  return 'loca.arc';&#10;}"></textarea>
+<div class="results-head"><label>MATCHES</label><span id="resultCount">0 RESULTS</span></div>
+<div id="results" class="results empty"><div class="empty-state"><span>⌁</span>YOUR MATCHES WILL APPEAR HERE</div></div>
+<div class="panel-foot"><span><kbd>ENTER</kbd> SEARCH <b>/</b> <kbd>↑</kbd> <kbd>↓</kbd> NAVIGATE RESULTS</span><span class="privacy"><i></i> PRIVATE BY DEFAULT</span></div>
+</section>
+<section id="site-how" class="site-info" hidden><div class="site-info-head"><b>HOW TO USE</b><button type="button" data-site-close aria-label="Close">×</button></div><ol><li>Paste code or text into the editor.</li><li>Enter a word or phrase in Search Query.</li><li>Press Find or Enter to see matching lines.</li><li>Select a result or use the arrow keys to navigate.</li><li>Use Clear All to reset the editor and search.</li></ol></section>
+<section id="site-about" class="site-info" hidden><div class="site-info-head"><b>ABOUT LOCA.ARC</b><button type="button" data-site-close aria-label="Close">×</button></div><p>A lightweight text and code locator built to help you find the signal and get back to building.</p><a class="site-x-link" href="https://x.com/0xKonitmi" target="_blank" rel="noreferrer">𝕏&nbsp; @0xKonitmi ↗</a><p class="site-copyright">© 2026 loca.arc · Created by @Konitmi · All rights reserved.</p></section>
+<section class="features"><div><small>01</small><span><b>Search by line</b><em>Find matching text across pasted code.</em></span></div><div><small>02</small><span><b>Jump between results</b><em>Move straight to a matching line.</em></span></div><div><small>03</small><span><b>Keep it local</b><em>Your input stays in your browser.</em></span></div></section>
+</main>
+<footer><span>loca.arc <em>/ LINE FINDER</em></span><span>BUILT FOR THE FLOW STATE <em>© 2026</em> · <a href="https://x.com/0xKonitmi" target="_blank" rel="noreferrer">𝕏 @0xKonitmi</a></span></footer>
+<script src="app.js"></script>
+</body></html>
