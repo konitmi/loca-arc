@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "loca.arc \u2014 Find any line",
+  "version": "0.3.1",
+  "description": "Find and navigate matching text directly on the current webpage, or search pasted code locally.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "contextMenus",
+    "storage"
+  ],
+  "action": {
+    "default_title": "Search this page with loca.arc",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon-16.png",
+      "32": "icon-32.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  }
+}
